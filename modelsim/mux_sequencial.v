@@ -45,6 +45,7 @@ module mux_sequencial(
 		case(current_state)
 			FOCUS1: next_state = FOCUS2;
 			FOCUS2: next_state = FOCUS1;
+			default: next_state = FOCUS1;
 		endcase
 	
 	end
