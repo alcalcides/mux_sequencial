@@ -41,7 +41,7 @@ module mux_sequencial(
 	end
 	
 	// next state decoder
-	always @(negedge toggleButton) begin
+	always @(*) begin
 		case(current_state)
 			FOCUS1: next_state = FOCUS2;
 			FOCUS2: next_state = FOCUS1;
